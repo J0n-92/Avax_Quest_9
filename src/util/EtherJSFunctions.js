@@ -13,11 +13,11 @@ export async function mintNFT(stringURI, contract) {
   // Paste step 7 code here
 }
 
-export function configureTokenURI(imageURL, name, description) {
+export function configureTokenURI(imageId, name, description) {
   return JSON.stringify({
     name,
     description,
-    image: imageURL,
+    image: `https://gateway.pinata.cloud/ipfs/${imageId}`, //
     attributes: [],
   });
 }
